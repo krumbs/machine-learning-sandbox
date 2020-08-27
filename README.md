@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 ## 1. Webcam Object Detection
 
-* related directory: `webcam-object-detection\`
+* related directory: `webcam-object-detection/`
 
 ### Usage
 
