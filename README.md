@@ -10,7 +10,7 @@
 ## Getting started
 
 Follow this tutorial to install all necessary software to start using the Tensorflow2 Object Detecting API
-[Tensorflow2 Object Detecting API Tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/auto_examples/object_detection_camera.html#sphx-glr-auto-examples-object-detection-camera-py)
+[Tensorflow2 Object Detecting API Tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)
 
 Install additional necessary packages with:
 
