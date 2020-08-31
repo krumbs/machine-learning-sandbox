@@ -7,9 +7,7 @@ import sys
 sys.path.append("../models/research")
 
 import tensorflow as tf
-from object_detection.utils import label_map_util
 from object_detection.utils import config_util
-from object_detection.utils import visualization_utils as viz_utils
 from object_detection.builders import model_builder
 
 def download_and_extract_model( MODELS_DIR,
@@ -65,14 +63,12 @@ def load_model(PATH_TO_CKPT, PATH_TO_CFG):
         tf.config.experimental.set_memory_growth(gpu, True)
 
     # Load pipeline config and build a detection model
-    print(PATH_TO_CFG)
     configs = config_util.get_configs_from_pipeline_file(str(PATH_TO_CFG))
     model_config = configs['model']
     detection_model = model_builder.build(model_config=model_config, is_training=False)
 
     # Restore checkpoint
-
     ckpt = tf.compat.v2.train.Checkpoint(model=detection_model)
     ckpt.restore(Path(PATH_TO_CKPT, 'ckpt-0').as_posix()).expect_partial()
 
-    return ckpt
+    return detection_model
