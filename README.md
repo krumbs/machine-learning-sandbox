@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 This example will connect to the available webcam. Detect objects and save the detected objects in each frame plus the label to file.
 
-![Example webcam detected output.](data/test_4.jpg)
+![Example webcam detected output](example_webcam_output.jpg)
 
 
 ### Usage
