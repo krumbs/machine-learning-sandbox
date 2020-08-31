@@ -22,8 +22,12 @@ pip install -r requirements.txt
 
 * related directory: `webcam-object-detection/`
 
-### Usage
+This example will connect to the available webcam. Detect objects and save the detected objects in each frame plus the label to file.
 
+![Example webcam detected output.](data/test_4.jpg)
+
+
+### Usage
 
 Each subproject needs to be run from its respected directory as its root. I.e. in your terminal from `object_detection/webcam-object-detection/` run
 
