@@ -34,3 +34,7 @@ Each subproject needs to be run from its respected directory as its root. I.e. i
 ```shell
 python main.py
 ```
+
+## 2. Mobile Video Object Detection
+Custom implementation based on [Mobile Video Object Detection with Temporally-Aware Feature Maps](https://openaccess.thecvf.com/content_cvpr_2018/papers/Liu_Mobile_Video_Object_CVPR_2018_paper.pdf).
+>  "...an online model for object detection in videos designed to run in real-time on low-powered mobile and embedded devices"
