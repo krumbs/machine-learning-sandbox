@@ -1,5 +1,4 @@
 import os
-import sys
 import cv2
 import numpy as np
 import tensorflow as tf
@@ -26,7 +25,7 @@ def detect_fn(detection_model, image):
 
     return detections, prediction_dict, tf.reshape(shapes, [-1])
 
-def main() -> None:
+def main():
     # load env vars
     try:
         load_dotenv(find_dotenv())
